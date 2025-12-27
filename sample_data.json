@@ -1,0 +1,102 @@
+{
+  "normal_transaction": {
+    "user_id": "user_123",
+    "amount": 5100,
+    "merchant_id": "supplier_a",
+    "device_id": "phone_001",
+    "ip_country": "IN",
+    "timestamp": "2025-12-27T10:15:00Z",
+    "transaction_id": "txn_normal_001",
+    "user_transaction_history": [
+      {
+        "amount": 4500,
+        "merchant_id": "supplier_a",
+        "device_id": "phone_001",
+        "ip_country": "IN",
+        "timestamp": "2025-12-27T09:00:00Z"
+      },
+      {
+        "amount": 5200,
+        "merchant_id": "supplier_b",
+        "device_id": "phone_001",
+        "ip_country": "IN",
+        "timestamp": "2025-12-26T14:30:00Z"
+      }
+    ]
+  },
+  
+  "card_testing": {
+    "user_id": "user_456",
+    "amount": 50,
+    "merchant_id": "unknown_merchant_1",
+    "device_id": "phone_002",
+    "ip_country": "IN",
+    "timestamp": "2025-12-27T03:00:00Z",
+    "transaction_id": "txn_testing_001",
+    "user_transaction_history": [
+      {
+        "amount": 50,
+        "merchant_id": "unknown_merchant_2",
+        "device_id": "phone_002",
+        "ip_country": "IN",
+        "timestamp": "2025-12-27T02:59:45Z"
+      },
+      {
+        "amount": 50,
+        "merchant_id": "unknown_merchant_3",
+        "device_id": "phone_002",
+        "ip_country": "IN",
+        "timestamp": "2025-12-27T02:59:30Z"
+      },
+      {
+        "amount": 50,
+        "merchant_id": "unknown_merchant_4",
+        "device_id": "phone_002",
+        "ip_country": "IN",
+        "timestamp": "2025-12-27T02:59:15Z"
+      }
+    ]
+  },
+  
+  "account_compromise": {
+    "user_id": "user_789",
+    "amount": 75000,
+    "merchant_id": "new_merchant",
+    "device_id": "new_device_001",
+    "ip_country": "AE",
+    "timestamp": "2025-12-27T23:30:00Z",
+    "transaction_id": "txn_compromise_001",
+    "user_transaction_history": [
+      {
+        "amount": 2000,
+        "merchant_id": "supplier_a",
+        "device_id": "phone_001",
+        "ip_country": "IN",
+        "timestamp": "2025-12-26T10:00:00Z"
+      },
+      {
+        "amount": 1800,
+        "merchant_id": "supplier_a",
+        "device_id": "phone_001",
+        "ip_country": "IN",
+        "timestamp": "2025-12-25T15:30:00Z"
+      }
+    ]
+  },
+  
+  "training_data_sample": {
+    "training_data": [
+      {
+        "features": [0.5, 45.0, 0.0, 2.0, 0.0, 0.0, 0.0, 5.0, 1.2, 0.0, 0.0, 0.0, 0.0, 14.0, 0.0],
+        "label": "normal",
+        "user_id": "train_user_1"
+      },
+      {
+        "features": [5.2, 95.0, 1.0, 1.0, 0.0, 0.0, 1.0, 0.0, 8.5, 1.0, 1.0, 1.0, 1.0, 2.0, 0.0],
+        "label": "fraud",
+        "user_id": "train_user_2"
+      }
+    ],
+    "force_retrain": false
+  }
+}
